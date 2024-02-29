@@ -38,8 +38,7 @@ def app():
         max_value=4000,
         step=200,
         value=1000,  # Initial value
-        on_change=update_values(st.session_state['n_samples']), 
-        key="n_samples"
+        on_change=update_values(st.session_state['n_samples'])
     )
 
    
@@ -48,8 +47,7 @@ def app():
         min_value=0,
         max_value=100,
         value=42,  # Initial value
-        on_change=update_values(st.session_state['random_state']), 
-        key="random_state"
+        on_change=update_values(st.session_state['random_state'])
     )
    
 
@@ -58,8 +56,7 @@ def app():
         min_value=2,
         max_value=6,
         value=2,  # Initial value
-        on_change=update_values(st.session_state['n_clusters']), 
-        key="n_clusters"
+        on_change=update_values(st.session_state['n_clusters'])
     )
 
     # Call the function once to display initial values
