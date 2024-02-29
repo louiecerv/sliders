@@ -48,15 +48,16 @@ def app():
         key="n_cluster"
 
     )
+
     # Call the function once to display initial values
-    update_values()
+    # update_values()
 
 import streamlit as st
 
-def update_values(st.session_state[key]):
+def update_values(key):
   """Prints the values of the three sliders."""
-  st.write("N Samples:" + str(st.session_state[key])))
-  
+  st.write("N Samples:" + str(key))
+
 #run the app
 if __name__ == "__main__":
     app()
