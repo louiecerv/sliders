@@ -66,7 +66,7 @@ import streamlit as st
 
 def update_values():
   """Prints the values of the three sliders."""
-  nsamples = st.session_state['n_samples']
+  n_samples = st.session_state['n_samples']
   random_state = st.session_state['random_state']
   n_clusters = st.session_state['n_clusters']
 
