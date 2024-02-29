@@ -55,7 +55,7 @@ import streamlit as st
 
 def update_values():
   """Prints the values of the three sliders."""
-  st.write("N Samples:" + strn_samples))
+  st.write("N Samples:" + str(n_samples))
   st.write("Random State:" + str(random_state))
   st.write("N Clusters: " + str(n_clusters))
 
