@@ -16,9 +16,8 @@ from sklearn.metrics import classification_report
 # Define the Streamlit app
 def app():
 
-    st.title('Logistic Regression, Naive Bayes Classifiers and Support Vector Machine')
-    st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
- 
+    st.title('Streamlit App')
+    st.text('This app demonstrates how to update the values from the sliders.')
     if "n_samples" not in st.session_state:        
             st.session_state['n_samples'] = 0
 
@@ -74,7 +73,7 @@ def update_values():
   n_clusters = st.session_state['n_clusters']
 
   dataarr = [[n_samples, random_state, n_clusters]]
-  st.write("N Samples:" + str(dataarr))
+  st.write("The values from the sliders are: " + str(dataarr))
 
 #run the app
 if __name__ == "__main__":
