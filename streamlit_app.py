@@ -32,31 +32,34 @@ def app():
     # Create a slider with a label and initial value
 
     
-    st.session_state['n_samples'] = st.slider(
+    n_samples = st.slider(
         label="Number of samples (200 to 4000):",
         min_value=200,
         max_value=4000,
         step=200,
         value=1000,  # Initial value
-        on_change=update_values()
+        on_change=update_values(),
+        key="n_samples"
     )
 
    
-    st.session_state['random_state'] = st.slider(
+    random_state = st.slider(
         label="Random seed (between 0 and 100):",
         min_value=0,
         max_value=100,
         value=42,  # Initial value
-        on_change=update_values()
+        on_change=update_values(),
+        key="random_state"
     )
    
 
-    st.session_state['n_clusters'] = st.slider(
+    n_clusters = st.slider(
         label="Number of Clusters:",
         min_value=2,
         max_value=6,
         value=2,  # Initial value
-        on_change=update_values()
+        on_change=update_values(),
+        key ="n_clusters"
     )
 
     # Call the function once to display initial values
