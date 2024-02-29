@@ -38,7 +38,7 @@ def app():
         max_value=4000,
         step=200,
         value=1000,  # Initial value
-        on_change=update_values(st.session_state['n_samples'])
+        on_change=update_values()
     )
 
    
@@ -47,7 +47,7 @@ def app():
         min_value=0,
         max_value=100,
         value=42,  # Initial value
-        on_change=update_values(st.session_state['random_state'])
+        on_change=update_values()
     )
    
 
@@ -56,7 +56,7 @@ def app():
         min_value=2,
         max_value=6,
         value=2,  # Initial value
-        on_change=update_values(st.session_state['n_clusters'])
+        on_change=update_values()
     )
 
     # Call the function once to display initial values
@@ -64,7 +64,7 @@ def app():
 
 import streamlit as st
 
-def update_values(key):
+def update_values():
   """Prints the values of the three sliders."""
   nsamples = st.session_state['n_samples']
   random_state = st.session_state['random_state']
