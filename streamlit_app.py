@@ -20,7 +20,7 @@ def app():
     st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
  
     # Create a slider with a label and initial value
-    n_samples = st.slider(
+    st.session_state['n_samples']) = st.slider(
         label="Number of samples (200 to 4000):",
         min_value=200,
         max_value=4000,
@@ -30,7 +30,7 @@ def app():
         key="n_samples"
     )
   
-    random_state = st.slider(
+    st.session_state['random_state'] = st.slider(
         label="Random seed (between 0 and 100):",
         min_value=0,
         max_value=100,
@@ -39,7 +39,7 @@ def app():
         key="random_state"
     )
    
-    n_clusters = st.slider(
+    st.session_state['n_clusters'] = st.slider(
         label="Number of Clusters:",
         min_value=2,
         max_value=6,
