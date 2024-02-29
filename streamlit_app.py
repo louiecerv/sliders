@@ -70,7 +70,7 @@ def update_values():
   random_state = st.session_state['random_state']
   n_clusters = st.session_state['n_clusters']
 
-  dataarr = [[nsamples, random_state, nclusters]]
+  dataarr = [[n_samples, random_state, n_clusters]]
   st.write("N Samples:" + str(dataarr))
 
 #run the app
