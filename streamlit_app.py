@@ -20,7 +20,7 @@ def app():
     st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
  
     # Create a slider with a label and initial value
-    st.session_state['n_samples']) = st.slider(
+    st.session_state['n_samples'] = st.slider(
         label="Number of samples (200 to 4000):",
         min_value=200,
         max_value=4000,
