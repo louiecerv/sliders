@@ -49,7 +49,7 @@ def app():
 
     )
     # Call the function once to display initial values
-    update_values(n_samples, random_state , n_clusters)
+    update_values()
 
 import streamlit as st
 
